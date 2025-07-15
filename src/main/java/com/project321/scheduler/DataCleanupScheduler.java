@@ -35,7 +35,7 @@ public class DataCleanupScheduler {
         cartRepository.deleteAll();
         orderRepository.deleteAll();
         userRepository.deleteAll();
-        productRepository.deleteAll();  Optional: remove if you want to keep products
+        productRepository.deleteAll();  
 
     }
 }
