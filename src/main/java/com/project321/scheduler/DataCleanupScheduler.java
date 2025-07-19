@@ -48,7 +48,7 @@ public class DataCleanupScheduler {
     @Transactional
     @Scheduled(fixedRate = 3600000) // every 1 hour
     public void clearTestData() {
-        System.out.println("Running DAO cleanup...");
+        System.out.println("🔄 DAO Cleanup Started...");
 
         cartItemDao.deleteAll();
         cartDao.deleteAll();
@@ -59,6 +59,6 @@ public class DataCleanupScheduler {
         customerDao.deleteAll();
         sellerDao.deleteAll();
 
-        System.out.println("DAO cleanup completed.");
+        System.out.println("✅ DAO Cleanup Completed.");
     }
 }
