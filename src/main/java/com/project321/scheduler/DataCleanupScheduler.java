@@ -1,13 +1,13 @@
 package com.project321.scheduler;
 
-import com.project321.dao.AddressDao;
-import com.project321.dao.CartDao;
-import com.project321.dao.CartItemDao;
-import com.project321.dao.CustomerDao;
-import com.project321.dao.OrderDao;
-import com.project321.dao.ProductDao;
-import com.project321.dao.SellerDao;
-import com.project321.dao.SessionDao;
+import com.project321.repository.AddressDao;
+import com.project321.repository.CartDao;
+import com.project321.repository.CartItemDao;
+import com.project321.repository.CustomerDao;
+import com.project321.repository.OrderDao;
+import com.project321.repository.ProductDao;
+import com.project321.repository.SellerDao;
+import com.project321.repository.SessionDao;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
