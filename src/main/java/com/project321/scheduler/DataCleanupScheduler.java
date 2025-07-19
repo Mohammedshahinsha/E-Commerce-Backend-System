@@ -30,12 +30,14 @@ public class DataCleanupScheduler {
 
     @Transactional
     @Scheduled(fixedRate = 3600000) // runs every 1 hour
-    
+    public void clearTestData() {
+        System.out.println("Running cleanup...");
 
         cartRepository.deleteAll();
         orderRepository.deleteAll();
         userRepository.deleteAll();
-        productRepository.deleteAll();  
+        productRepository.deleteAll();
 
+        System.out.println("Cleanup completed.");
     }
 }
