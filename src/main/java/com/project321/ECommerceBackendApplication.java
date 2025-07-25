@@ -13,7 +13,7 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 
 
 @SpringBootApplication
-@EnableScheduling
+
 public class ECommerceBackendApplication {
 
 	public static void main(String[] args) {
