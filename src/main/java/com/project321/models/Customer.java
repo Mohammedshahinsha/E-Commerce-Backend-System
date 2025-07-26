@@ -67,7 +67,7 @@ public class Customer {
 	@Embedded
 	private CreditCard creditCard;
 	
-	
+	@JsonIgnore
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "customer_address_mapping",
 				joinColumns = {
